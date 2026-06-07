@@ -10,111 +10,178 @@
 
 <body class="bg-[#f7f9fc]">
 
-    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out py-4 px-10 ">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-
-            <div class="text-2xl font-bold tracking-tighter" id="nav-logo">
-                <img src="img 1/logo_iqoo-removebg-preview.png" alt="iQOO Logo" class="h-16 w-16">
+    <nav id="navbar"
+        class="fixed top-0 left-0 w-full z-50 bg-[#f8f9fa] py-6 px-6 md:px-20 transition-all duration-300 ease-in-out">
+        <div class="w-full flex justify-between items-center">
+            <div id="nav-logo" class="flex items-center shrink-0">
+                <img src="img home/logo iqoo nyar.png" alt="iQOO Logo"
+                    class="h-7 md:h-8 w-auto object-contain select-none">
             </div>
 
-            <div class="hidden md:flex space-x-8 text-sm font-medium text-shadow-black" id="nav-links">
-                <a href="#" class="hover:text-amber-400">Beranda</a>
-                <a href="#" class="hover:text-amber-400">Produk</a>
-                <a href="https://shop.vivo.com/id/products/phone?categoryId=40" class="hover:text-amber-400">E-Store</a>
-                <a href="#" class="hover:text-amber-400">OriginOS</a>
-                <a href="#" class="hover:text-amber-400">Dukungan</a>
-                <a href="#" class="hover:text-amber-400">Paritel</a>
-                <a href="#" class="hover:text-amber-400">Tentang IQOO</a>
+            <div class="hidden md:flex items-center space-x-10 text-[15px] font-medium text-gray-900 tracking-wide"
+                id="nav-links">
+                <a href="index.html" class="hover:text-amber-500 transition-colors">Beranda</a>
+                <a href="produk.html" class="hover:text-amber-500 transition-colors">Produk</a>
+                <a href="https://shop.vivo.com/id/products/phone?categoryId=40"
+                    class="hover:text-amber-500 transition-colors">E-Store</a>
+                <a href="https://www.iqoo.com/id/originos" class="hover:text-amber-500 transition-colors">OriginOS</a>
+                <a href="dukungan.html" class="hover:text-amber-500 transition-colors">Dukungan</a>
+                <a href="Paritel.html" class="hover:text-amber-500 transition-colors">Paritel</a>
+                <a href="Tentang iqoo.html" class="hover:text-amber-500 transition-colors">Tentang iQOO</a>
             </div>
 
-            <a href="#"><img src="img 1/tombol pencarian atas.png" alt="search" class="h-6 w-8"></a>
+            <div class="flex items-center shrink-0">
+                <a href="#" class="hover:opacity-70 transition-opacity block">
+                    <img src="img home/tombol pencarian atas.png" alt="search" class="h-6 w-6 object-contain">
+                </a>
+            </div>
         </div>
     </nav>
+    <div
+        class="relative w-full min-h-125 md:min-h-150 flex items-center justify-center pt-24 overflow-hidden bg-gray-50">
+        <div class="absolute inset-0 w-full h-full z-0">
+            <img src="img dukungan/image.png" alt="Dukungan iQOO Store"
+                class="w-full h-full object-cover object-center">
+            <div class="absolute inset-0 bg-white/10"></div>
+        </div>
 
-    <div class="w-full h-[36rem] relative mt-20 overflow-hidden">
-        <img src="img 3/image.png" alt="Dukungan iQOO" class="w-full h-full object-cover">
+        <div
+            class="max-w-7xl mx-auto w-full px-6 md:px-10 relative z-10 flex flex-col items-center justify-center text-center py-16">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-medium text-slate-900 tracking-tight mb-4 drop-shadow-sm">
+                Selamat datang di Dukungan iQOO
+            </h1>
+            <p class="text-sm sm:text-base md:text-lg text-slate-700 font-medium mb-8">
+                Senang dapat terhubung dengan Anda
+            </p>
 
-        <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 bg-black/10">
-            <h1 class="text-4xl md:text-5xl font-medium text-gray-900 mb-3">Selamat datang di Dukungan iQOO</h1>
-            <p class="text-gray-700 mb-8 text-lg">Senang dapat terhubung dengan Anda</p>
-
-            <div class="w-full max-w-2xl bg-white rounded-full shadow-md flex items-center px-6 py-4">
+            <div
+                class="w-full max-w-2xl bg-white/95 backdrop-blur-sm rounded-full shadow-lg border border-gray-200/50 flex items-center px-6 py-3.5 md:py-4 transition-all duration-300 focus-within:shadow-xl focus-within:border-amber-400">
                 <input type="text" placeholder="Cari dukungan"
-                    class="w-full bg-transparent outline-none text-gray-600 text-base">
-                <a href="#"><img src="img 3/image-removebg-preview (3).png" alt="Cari"
-                        class="h-10 w-15 ml-2 opacity-60"></a>
+                    class="w-full bg-transparent outline-none text-gray-800 text-sm md:text-base placeholder-gray-400">
+                <button class="ml-2 p-1 hover:scale-105 transition duration-200">
+                    <img src="img home/tombol pencarian atas.png" alt="Cari" class="h-5 w-6 md:h-6 md:w-7 opacity-70">
+                </button>
             </div>
-            <div class="w-full max-w-2xl text-left px-6 mt-2">
-                <span class="text-xs text-gray-500">iQOO 11</span>
+
+            <div class="w-full max-w-2xl text-left px-6 mt-3">
+                <span class="text-xs font-medium text-gray-500/90 hover:text-amber-500 cursor-pointer transition">iQOO
+                    11</span>
             </div>
         </div>
     </div>
 
-    <div class="max-w-6xl mx-auto px-4 relative z-10 -mt-24 mb-20">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 relative z-20 -mt-16 md:text-base mb-24">
         <div
-            class="bg-white rounded-3xl shadow-xl grid grid-cols-2 md:grid-cols-4 overflow-hidden border border-gray-100">
+            class="bg-white rounded-3xl shadow-xl grid grid-cols-2 md:grid-cols-4 overflow-hidden border border-gray-100/80">
 
             <div
-                class="flex flex-col items-center justify-center p-12 border-b border-r border-gray-100 hover:bg-gray-50 transition cursor-pointer text-center">
-                <img src="img 3/omah.png" alt="Service Center" class="h-12 w-12 mb-4">
-                <span class="text-xs font-medium text-gray-700">Service Center</span>
+                class="flex flex-col items-center justify-center p-8 md:p-12 border-b border-r border-gray-100 hover:bg-slate-50/80 transition-all duration-300 group cursor-pointer text-center">
+                <div
+                    class="h-14 w-14 flex items-center justify-center mb-4 group-hover:scale-110 transition duration-300">
+                    <img src="img dukungan/omah.png" alt="Service Center" class="max-h-full max-w-full object-contain">
+                </div>
+                <span class="text-xs md:text-sm font-medium text-gray-700 group-hover:text-amber-500 transition">Service
+                    Center</span>
             </div>
 
             <div
-                class="flex flex-col items-center justify-center p-12 border-b border-r border-gray-100 hover:bg-gray-50 transition cursor-pointer text-center">
-                <img src="img 3/pelindung.png" alt="Otentikasi IMEI" class="h-12 w-12 mb-4">
-                <span class="text-xs font-medium text-gray-700">Otentikasi IMEI</span>
+                class="flex flex-col items-center justify-center p-8 md:p-12 border-b border-r border-gray-100 hover:bg-slate-50/80 transition-all duration-300 group cursor-pointer text-center">
+                <div
+                    class="h-14 w-14 flex items-center justify-center mb-4 group-hover:scale-110 transition duration-300">
+                    <img src="img dukungan/pelindung.png" alt="Otentikasi IMEI"
+                        class="max-h-full max-w-full object-contain">
+                </div>
+                <span
+                    class="text-xs md:text-sm font-medium text-gray-700 group-hover:text-amber-500 transition">Otentikasi
+                    IMEI</span>
             </div>
 
             <div
-                class="flex flex-col items-center justify-center p-12 border-b border-r border-gray-100 hover:bg-gray-50 transition cursor-pointer text-center">
-                <img src="img 3/i.png" alt="Harga Suku Cadang" class="h-12 w-12 mb-4">
-                <span class="text-xs font-medium text-gray-700">Harga Suku Cadang</span>
+                class="flex flex-col items-center justify-center p-8 md:p-12 border-b border-r border-gray-100 hover:bg-slate-50/80 transition-all duration-300 group cursor-pointer text-center">
+                <div
+                    class="h-14 w-14 flex items-center justify-center mb-4 group-hover:scale-110 transition duration-300">
+                    <img src="img dukungan/i.png" alt="Harga Suku Cadang" class="max-h-full max-w-full object-contain">
+                </div>
+                <span class="text-xs md:text-sm font-medium text-gray-700 group-hover:text-amber-500 transition">Harga
+                    Suku Cadang</span>
             </div>
 
             <div
-                class="flex flex-col items-center justify-center p-12 border-b border-gray-100 hover:bg-gray-50 transition cursor-pointer text-center">
-                <img src="img 3/cari.png" alt="Cek status perbaikan" class="h-12 w-12 mb-4">
-                <span class="text-xs font-medium text-gray-700">Cek status perbaikan</span>
+                class="flex flex-col items-center justify-center p-8 md:p-12 border-b border-gray-100 hover:bg-slate-50/80 transition-all duration-300 group cursor-pointer text-center">
+                <div
+                    class="h-14 w-14 flex items-center justify-center mb-4 group-hover:scale-110 transition duration-300">
+                    <img src="img dukungan/cari.png" alt="Cek status perbaikan"
+                        class="max-h-full max-w-full object-contain">
+                </div>
+                <span class="text-xs md:text-sm font-medium text-gray-700 group-hover:text-amber-500 transition">Cek
+                    status perbaikan</span>
             </div>
 
             <div
-                class="flex flex-col items-center justify-center p-12 border-r border-gray-100 hover:bg-gray-50 transition cursor-pointer text-center">
-                <img src="img 3/mobil.png" alt="Layanan Perbaikan Antar Jemput" class="h-12 w-12 mb-4">
-                <span class="text-xs font-medium text-gray-700">Layanan Perbaikan Antar Jemput</span>
+                class="flex flex-col items-center justify-center p-8 md:p-12 border-r border-gray-100 md:border-b-0 border-b hover:bg-slate-50/80 transition-all duration-300 group cursor-pointer text-center">
+                <div
+                    class="h-14 w-14 flex items-center justify-center mb-4 group-hover:scale-110 transition duration-300">
+                    <img src="img dukungan/mobil.png" alt="Layanan Perbaikan Antar Jemput"
+                        class="max-h-full max-w-full object-contain">
+                </div>
+                <span class="text-xs md:text-sm font-medium text-gray-700 group-hover:text-amber-500 transition">Layanan
+                    Perbaikan Antar Jemput</span>
             </div>
 
             <div
-                class="flex flex-col items-center justify-center p-12 border-r border-gray-100 hover:bg-gray-50 transition cursor-pointer text-center">
-                <img src="img 3/jam.png" alt="Layanan Reservasi" class="h-12 w-12 mb-4">
-                <span class="text-xs font-medium text-gray-700">Layanan Reservasi</span>
+                class="flex flex-col items-center justify-center p-8 md:p-12 border-r border-gray-100 hover:bg-slate-50/80 transition-all duration-300 group cursor-pointer text-center">
+                <div
+                    class="h-14 w-14 flex items-center justify-center mb-4 group-hover:scale-110 transition duration-300">
+                    <img src="img dukungan/jam.png" alt="Layanan Reservasi"
+                        class="max-h-full max-w-full object-contain">
+                </div>
+                <span class="text-xs md:text-sm font-medium text-gray-700 group-hover:text-amber-500 transition">Layanan
+                    Reservasi</span>
             </div>
 
             <div
-                class="flex flex-col items-center justify-center p-12 border-r border-gray-100 hover:bg-gray-50 transition cursor-pointer text-center">
-                <img src="img 3/ka.png" alt="Kebijakan Garansi iQOO" class="h-12 w-12 mb-4">
-                <span class="text-xs font-medium text-gray-700">Kebijakan Garansi iQOO</span>
+                class="flex flex-col items-center justify-center p-8 md:p-12 border-r border-gray-100 hover:bg-slate-50/80 transition-all duration-300 group cursor-pointer text-center">
+                <div
+                    class="h-14 w-14 flex items-center justify-center mb-4 group-hover:scale-110 transition duration-300">
+                    <img src="img dukungan/ka.png" alt="Kebijakan Garansi iQOO"
+                        class="max-h-full max-w-full object-contain">
+                </div>
+                <span
+                    class="text-xs md:text-sm font-medium text-gray-700 group-hover:text-amber-500 transition">Kebijakan
+                    Garansi iQOO</span>
             </div>
 
-            <div class="bg-white p-12 hidden md:block"></div>
+            <div class="bg-white p-8 md:p-12 hidden md:block"></div>
 
         </div>
     </div>
 
     <div class="max-w-6xl mx-auto px-4 mb-20">
-        <h2 class="text-2xl font-medium text-slate-800 text-center mb-10">Aktivitas Layanan</h2>
+        <h2 class="text-2xl md:text-3xl font-medium text-slate-900 mb-10 tracking-wide text-center">
+            Aktivitas Layanan
+        </h2>
 
-        <div class="flex justify-start">
+        <div class="flex justify-start w-full">
+
             <div
-                class="w-full max-w-md bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 text-left">
-                <div class="h-56 w-full">
-                    <img src="img 1/iqoo 15.jpg" alt="iQOO 15 Exclusive Benefit" class="w-full h-full object-cover">
+                class="w-full max-w-full sm:max-w-md md:max-w-lg bg-white rounded-4xl overflow-hidden shadow-sm hover:shadow-md border border-gray-100 transition-all duration-300 group">
+
+                <div class="w-full aspect-16/10 overflow-hidden bg-gray-50">
+                    <img src="img home/iqoo 15.jpg" alt="iQOO 15 Exclusive Benefit"
+                        class="w-full h-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105">
                 </div>
-                <div class="p-6">
-                    <h3 class="text-base font-medium text-gray-800 mb-1">iQOO 15 Exclusive Service Benefit</h3>
-                    <p class="text-xs text-gray-400">Dapatkan layanan eksklusif untuk iQOO 15</p>
+
+                <div class="p-6 text-center bg-white">
+                    <h3 class="text-lg md:text-xl font-medium text-gray-900 tracking-tight">
+                        iQOO 15 Exclusive Service Benefit
+                    </h3>
+                    <p class="text-xs md:text-sm text-gray-500 mt-2 font-light">
+                        Dapatkan layanan eksklusif untuk iQOO 15
+                    </p>
                 </div>
+
             </div>
+
         </div>
     </div>
 
@@ -126,35 +193,35 @@
 
                 <div class="flex justify-between items-center py-5 border-b border-gray-100 cursor-pointer group">
                     <span class="text-sm text-gray-700 group-hover:text-amber-500 transition">iQOO 11 FAQs</span>
-                    <img src="img 3/panah.png" alt=">" class="h-3 w-3 opacity-40 group-hover:opacity-100">
+                    <img src="img dukungan/panah.png" alt=">" class="h-3 w-3 opacity-40 group-hover:opacity-100">
                 </div>
                 <div class="flex justify-between items-center py-5 border-b border-gray-100 cursor-pointer group">
                     <span class="text-sm text-gray-700 group-hover:text-amber-500 transition">Apakah saya dapat melacak
                         ponsel saya melal...</span>
-                    <img src="img 3/panah.png" alt=">" class="h-3 w-3 opacity-40 group-hover:opacity-100">
+                    <img src="img dukungan/panah.png" alt=">" class="h-3 w-3 opacity-40 group-hover:opacity-100">
                 </div>
 
                 <div class="flex justify-between items-center py-5 border-b border-gray-100 cursor-pointer group">
                     <span class="text-sm text-gray-700 group-hover:text-amber-500 transition">Apakah saya harus perbarui
                         sistem ponsel saya...</span>
-                    <img src="img 3/panah.png" alt=">" class="h-3 w-3 opacity-40 group-hover:opacity-100">
+                    <img src="img dukungan/panah.png" alt=">" class="h-3 w-3 opacity-40 group-hover:opacity-100">
                 </div>
                 <div class="flex justify-between items-center py-5 border-b border-gray-100 cursor-pointer group">
                     <span class="text-sm text-gray-700 group-hover:text-amber-500 transition">Bagaimana cara
                         mengembalikan cadangan obr...</span>
-                    <img src="img 3/panah.png" alt=">" class="h-3 w-3 opacity-40 group-hover:opacity-100">
+                    <img src="img dukungan/panah.png" alt=">" class="h-3 w-3 opacity-40 group-hover:opacity-100">
                 </div>
 
                 <div
                     class="flex justify-between items-center py-5 border-b md:border-b-0 border-gray-100 cursor-pointer group">
                     <span class="text-sm text-gray-700 group-hover:text-amber-500 transition">Apa itu VPN dan apa
                         gunanya?</span>
-                    <img src="img 3/panah.png" alt=">" class="h-3 w-3 opacity-40 group-hover:opacity-100">
+                    <img src="img dukungan/panah.png" alt=">" class="h-3 w-3 opacity-40 group-hover:opacity-100">
                 </div>
                 <div class="flex justify-between items-center py-5 md:border-b-0 cursor-pointer group">
                     <span class="text-sm text-gray-700 group-hover:text-amber-500 transition">Bagaimana jika saya lupa
                         kata sandi buka kunci...</span>
-                    <img src="img 3/panah.png" alt=">" class="h-3 w-3 opacity-40 group-hover:opacity-100">
+                    <img src="img dukungan/panah.png" alt=">" class="h-3 w-3 opacity-40 group-hover:opacity-100">
                 </div>
 
             </div>
@@ -163,7 +230,7 @@
                 <h5 href="#"
                     class="inline-flex items-center justify-center text-sm text-gray-600 hover:text-amber-500 font-medium transition gap-2">
                     Pelajari Lebih Lanjut
-                    <img src="img 3/panah bawah.svg" alt="O" class="h-7 w-7 opacity-70">
+                    <img src="img dukungan/panah bawah.svg" alt="O" class="h-7 w-7 opacity-70">
                 </h5>
             </div>
         </div>
@@ -175,7 +242,7 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 divide-y md:divide-y-0 md:divide-x divide-transparent">
 
                 <div class="flex flex-col items-center text-center px-4">
-                    <img src="img 3/whasap.png" alt="WhatsApp"
+                    <img src="img dukungan/whasap.png" alt="WhatsApp"
                         class="h-10 w-10 mb-4 opacity-80 hover:opacity-100 transition cursor-pointer">
                     <h3 class="text-lg font-medium text-gray-800 mb-2">WhatsApp</h3>
                     <p class="text-sm text-gray-500 leading-relaxed">
@@ -184,7 +251,7 @@
                 </div>
 
                 <div class="flex flex-col items-center text-center px-4">
-                    <img src="img 3/telepon bawah awal.png" alt="VIP Number"
+                    <img src="img dukungan/telepon bawah awal.png" alt="VIP Number"
                         class="h-10 w-10 mb-4 opacity-80 hover:opacity-100 transition cursor-pointer">
                     <h3 class="text-lg font-medium text-gray-800 mb-2">VIP Number:<br>00180332160635</h3>
                     <p class="text-sm text-gray-500 leading-relaxed">
@@ -193,7 +260,7 @@
                 </div>
 
                 <div class="flex flex-col items-center text-center px-4">
-                    <img src="img 3/telepon awal.png" alt="Telepon Bebas Pulsa"
+                    <img src="img dukungan/telepon awal.png" alt="Telepon Bebas Pulsa"
                         class="h-10 w-10 mb-4 opacity-80 hover:opacity-100 transition cursor-pointer">
                     <h3 class="text-lg font-medium text-gray-800 mb-2">0800-1-503258</h3>
                     <p class="text-sm text-gray-500 leading-relaxed">
@@ -202,7 +269,7 @@
                 </div>
 
                 <div class="flex flex-col items-center text-center px-4">
-                    <img src="img 3/email awal.png" alt="Kirim Email"
+                    <img src="img dukungan/email awal.png" alt="Kirim Email"
                         class="h-10 w-10 mb-4 opacity-80 hover:opacity-100 transition cursor-pointer">
                     <h3 class="text-lg font-medium text-gray-800">Kirim Email</h3>
                 </div>
@@ -211,7 +278,7 @@
         </div>
     </div>
     <footer class="bg-slate-800 pt-16 pb-8 text-white">
-        <div class="max-w-[1200px] mx-auto px-8">
+        <div class="max-w-300 mx-auto px-8">
 
             <div class="grid grid-cols-4 gap-8">
 
@@ -255,7 +322,7 @@
 
                 <div class="space-y-6 text-sm">
                     <div class="flex items-start gap-3 text-white hover:text-amber-300">
-                        <img src="img 1/image.png" alt="chat" class="w-8 h-8 mt-1">
+                        <img src="img home/image.png" alt="chat" class="w-8 h-8 mt-1">
                         <div>
                             <p>WhatsApp Senin - Minggu</p>
                             <p>09:00 - 21:00</p>
@@ -263,7 +330,7 @@
                     </div>
 
                     <div class="flex items-start gap-3">
-                        <img src="img 1/telepon awal.png" alt="telepon 1" class="w-8 h-8 mt-1">
+                        <img src="img home/telepon awal.png" alt="telepon 1" class="w-8 h-8 mt-1">
                         <div>
                             <p>VIP Hotline: Senin - Minggu</p>
                             <p>9:00-18:00 (Bebas Pulsa)</p>
@@ -272,7 +339,7 @@
                     </div>
 
                     <div class="flex items-start gap-3">
-                        <img src="img 1/telepon bawah awal.png" alt="telepon 2" class="w-8 h-8 mt-1">
+                        <img src="img home/telepon bawah awal.png" alt="telepon 2" class="w-8 h-8 mt-1">
                         <div>
                             <p>Senin - Minggu 9:00-18:00</p>
                             <p>(Bebas Pulsa)</p>
@@ -281,7 +348,7 @@
                     </div>
 
                     <div class="flex items-center gap-3 text-white hover:text-amber-300">
-                        <img src="img 1/email awal.png" alt="email" class="w-8 h-8 mt-1">
+                        <img src="img home/email awal.png" alt="email" class="w-8 h-8 mt-1">
                         <p>Kirim Email</p>
                     </div>
                 </div>

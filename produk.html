@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk iQOO - Clone</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body class="bg-[#f8f9fa] antialiased">
+
+    <nav id="navbar"
+        class="fixed top-0 left-0 w-full z-50 bg-[#f8f9fa] py-6 px-6 md:px-20 transition-all duration-300 ease-in-out">
+        <div class="w-full flex justify-between items-center">
+            <div id="nav-logo" class="flex items-center shrink-0">
+                <img src="img home/logo iqoo nyar.png" alt="iQOO Logo"
+                    class="h-7 md:h-8 w-auto object-contain select-none">
+            </div>
+
+            <div class="hidden md:flex items-center space-x-10 text-[15px] font-medium text-gray-900 tracking-wide"
+                id="nav-links">
+                <a href="index.html" class="hover:text-amber-500 transition-colors">Beranda</a>
+                <a href="produk.html" class="hover:text-amber-500 transition-colors">Produk</a>
+                <a href="https://shop.vivo.com/id/products/phone?categoryId=40"
+                    class="hover:text-amber-500 transition-colors">E-Store</a>
+                <a href="https://www.iqoo.com/id/originos" class="hover:text-amber-500 transition-colors">OriginOS</a>
+                <a href="dukungan.html" class="hover:text-amber-500 transition-colors">Dukungan</a>
+                <a href="Paritel.html" class="hover:text-amber-500 transition-colors">Paritel</a>
+                <a href="Tentang iqoo.html" class="hover:text-amber-500 transition-colors">Tentang iQOO</a>
+            </div>
+
+            <div class="flex items-center shrink-0">
+                <a href="#" class="hover:opacity-70 transition-opacity block">
+                    <img src="img home/tombol pencarian atas.png" alt="search" class="h-6 w-6 object-contain">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="max-w-7xl mx-auto px-4 pt-28 pb-12">
+
+        <div class="text-center mb-14">
+            <h2 class="text-4xl md:text-5xl font-semibold tracking-tight text-gray-900">
+                Temukan ponsel yang tepat untuk Anda
+            </h2>
+        </div>
+
+        <div
+            class="bg-white rounded-2xl p-2 max-w-4xl mx-auto flex flex-wrap items-center justify-center gap-2 md:gap-6 shadow-md mb-12">
+
+            <button id="tab-semua" onclick="gantiTab('semua')"
+                class="tab-btn bg-[#f1b319] text-white font-semibold px-6 py-2.5 rounded-xl transition duration-300 cursor-pointer hover:bg-[#f1b319] hover:text-white">
+                Semua model
+            </button>
+
+            <button id="tab-flagship" onclick="gantiTab('flagship')"
+                class="tab-btn text-gray-600 hover:bg-[#f1b319] hover:text-white font-medium px-4 py-2 rounded-xl transition duration-300 cursor-pointer">
+                Flagship Series
+            </button>
+
+            <button id="tab-neo" onclick="gantiTab('neo')"
+                class="tab-btn text-gray-600 hover:bg-[#f1b319] hover:text-white font-medium px-4 py-2 rounded-xl transition duration-300 cursor-pointer">
+                Neo Series
+            </button>
+
+            <button id="tab-z" onclick="gantiTab('z')"
+                class="tab-btn text-gray-600 hover:bg-[#f1b319] hover:text-white font-medium px-4 py-2 rounded-xl transition duration-300 pointer">
+                Z Series
+            </button>
+
+            <button id="tab-aksesoris" onclick="gantiTab('aksesoris')"
+                class="tab-btn text-gray-600 hover:bg-[#f1b319] hover:text-white font-medium px-4 py-2 rounded-xl transition duration-300 cursor-pointer">
+                Aksesoris
+            </button>
+        </div>
+
+    </section>
+
+    <div id="product-container"
+        class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto px-4 md:px-12 mt-6 mb-24">
+
+        <div data-category="flagship"
+            class="bg-white rounded-3xl p-6 flex flex-col items-center justify-between min-h-130 transition-all duration-300 transform hover:-translate-y-1 shadow-sm">
+            <div class="w-full flex justify-center items-center flex-1 p-4">
+                <img src="img produk/15r.png" alt="iQOO 15R" class="max-h-70 object-contain">
+            </div>
+            <div class="flex space-x-2 my-4">
+                <span
+                    class="w-5 h-5 rounded-full bg-[#7a7b7d] border border-gray-400 ring-2 ring-offset-2 ring-gray-300 cursor-pointer"></span>
+                <span class="w-5 h-5 rounded-full bg-[#cce7df] border border-gray-300 cursor-pointer"></span>
+            </div>
+            <div class="text-center w-full">
+                <h3 class="text-xl font-medium text-gray-900 mb-2">iQOO 15R</h3>
+                <p class="text-xs text-gray-500 font-medium">Rp7.299.000 (8+256)</p>
+                <p class="text-xs text-gray-500 font-medium mt-0.5">Rp8.999.000 (12+512)</p>
+            </div>
+        </div>
+
+        <div data-category="flagship"
+            class="bg-white rounded-3xl p-6 flex flex-col items-center justify-between min-h-130 transition-all duration-300 transform hover:-translate-y-1 shadow-sm">
+            <div class="w-full flex justify-center items-center flex-1 p-4">
+                <img src="img produk/15.png" alt="iQOO 15" class="max-h-70 object-contain">
+            </div>
+            <div class="flex space-x-2 my-4">
+                <span
+                    class="w-5 h-5 rounded-full bg-[#2a2b2d] border border-gray-600 ring-2 ring-offset-2 ring-gray-400 cursor-pointer"></span>
+            </div>
+            <div class="text-center w-full">
+                <h3 class="text-xl font-medium text-gray-900 mb-2">iQOO 15</h3>
+                <p class="text-xs text-gray-500 font-medium">Rp12.999.000 (12+256)</p>
+                <p class="text-xs text-gray-500 font-medium mt-0.5">Rp15.999.000 (16+1TB)</p>
+            </div>
+        </div>
+
+        <div data-category="z"
+            class="bg-white rounded-3xl p-6 flex flex-col items-center justify-between min-h-130 transition-all duration-300 transform hover:-translate-y-1 shadow-sm">
+            <div class="w-full flex justify-center items-center flex-1 p-4">
+                <img src="img produk/z10 lite.png" alt="Z10 Lite" class="max-h-70 object-contain">
+            </div>
+            <div class="flex space-x-2 my-4">
+                <span
+                    class="w-5 h-5 rounded-full bg-[#4d5844] border border-gray-600 ring-2 ring-offset-2 ring-gray-400 cursor-pointer"></span>
+            </div>
+            <div class="text-center w-full">
+                <h3 class="text-xl font-medium text-gray-900 mb-2">Z10 Lite</h3>
+                <p class="text-xs text-gray-500 font-medium">Rp2.499.000 (8+128)</p>
+                <p class="text-xs text-gray-500 font-medium mt-0.5">Rp2.699.000 (8+256)</p>
+            </div>
+        </div>
+
+        <div data-category="z"
+            class="bg-white rounded-3xl p-6 flex flex-col items-center justify-between min-h-130 transition-all duration-300 transform hover:-translate-y-1 shadow-sm">
+            <div class="w-full flex justify-center items-center flex-1 p-4">
+                <img src="img produk/z10r.png" alt="Z10R 5G" class="max-h-70 object-contain">
+            </div>
+            <div class="flex space-x-2 my-4">
+                <span
+                    class="w-5 h-5 rounded-full bg-[#decbb7] border border-gray-300 ring-2 ring-offset-2 ring-amber-200 cursor-pointer"></span>
+                <span class="w-5 h-5 rounded-full bg-[#2c2d31] border border-gray-600 cursor-pointer"></span>
+            </div>
+            <div class="text-center w-full">
+                <h3 class="text-xl font-medium text-gray-900 mb-2">Z10R 5G</h3>
+                <p class="text-xs text-gray-500 font-medium">Rp3.299.000 (8+128)</p>
+                <p class="text-xs text-gray-500 font-medium mt-0.5">Rp3.899.000 (12+256)</p>
+            </div>
+        </div>
+
+        <div data-category="z"
+            class="bg-white rounded-3xl p-6 flex flex-col items-center justify-between min-h-130 transition-all duration-300 transform hover:-translate-y-1 shadow-sm">
+            <div class="w-full flex justify-center items-center flex-1 p-4">
+                <img src="img produk/z9.png" alt="Z9 5G" class="max-h-70 object-contain">
+            </div>
+            <div class="flex space-x-2 my-4">
+                <span
+                    class="w-5 h-5 rounded-full bg-[#bce3db] border border-gray-300 ring-2 ring-offset-2 ring-teal-200 cursor-pointer"></span>
+                <span class="w-5 h-5 rounded-full bg-[#343538] border border-gray-600 cursor-pointer"></span>
+            </div>
+            <div class="text-center w-full">
+                <h3 class="text-xl font-medium text-gray-900 mb-2">Z9 5G</h3>
+                <p class="text-xs text-gray-500 font-medium">Rp3.999.000 (8+128)</p>
+                <p class="text-xs text-gray-500 font-medium mt-0.5">Rp4.299.000 (8+256)</p>
+            </div>
+        </div>
+
+        <div data-category="z"
+            class="bg-white rounded-3xl p-6 flex flex-col items-center justify-between min-h-130 transition-all duration-300 transform hover:-translate-y-1 shadow-sm">
+            <div class="w-full flex justify-center items-center flex-1 p-4">
+                <img src="img produk/z9x.png" alt="Z9x 5G" class="max-h-70 object-contain">
+            </div>
+            <div class="flex space-x-2 my-4">
+                <span
+                    class="w-5 h-5 rounded-full bg-[#2d3336] border border-gray-600 ring-2 ring-offset-2 ring-gray-400 cursor-pointer"></span>
+                <span class="w-5 h-5 rounded-full bg-[#4a6b6c] border border-gray-500 cursor-pointer"></span>
+            </div>
+            <div class="text-center w-full">
+                <h3 class="text-xl font-medium text-gray-900 mb-2">Z9x 5G</h3>
+                <p class="text-xs text-gray-500 font-medium">Rp2.999.000 (8+128)</p>
+                <p class="text-xs text-gray-500 font-medium mt-0.5">Rp3.299.000 (8+256)</p>
+            </div>
+        </div>
+
+        <div data-category="z"
+            class="bg-white rounded-3xl p-6 flex flex-col items-center justify-between min-h-130 transition-all duration-300 transform hover:-translate-y-1 shadow-sm">
+            <div class="w-full flex justify-center items-center flex-1 p-4">
+                <img src="img produk/z10.png" alt="Z10 5G" class="max-h-70 object-contain">
+            </div>
+            <div class="flex space-x-2 my-4">
+                <span
+                    class="w-5 h-5 rounded-full bg-[#c5d0db] border border-gray-300 ring-2 ring-offset-2 ring-blue-200 cursor-pointer"></span>
+                <span class="w-5 h-5 rounded-full bg-[#2e3033] border border-gray-600 cursor-pointer"></span>
+            </div>
+            <div class="text-center w-full">
+                <h3 class="text-xl font-medium text-gray-900 mb-2">Z10 5G</h3>
+                <p class="text-xs text-gray-500 font-medium">Rp3.699.000 (8+128)</p>
+                <p class="text-xs text-gray-500 font-medium mt-0.5">Rp3.999.000 (8+256)</p>
+            </div>
+        </div>
+
+        <div data-category="neo"
+            class="bg-white rounded-3xl p-6 flex flex-col items-center justify-between min-h-130 transition-all duration-300 transform hover:-translate-y-1 shadow-sm">
+            <div class="w-full flex justify-center items-center flex-1 p-4">
+                <img src="img produk/neo 10.png" alt="Neo 10" class="max-h-70 object-contain">
+            </div>
+            <div class="flex space-x-2 my-4">
+                <span
+                    class="w-5 h-5 rounded-full bg-[#f07b5a] border border-orange-400 ring-2 ring-offset-2 ring-orange-200 cursor-pointer"></span>
+                <span class="w-5 h-5 rounded-full bg-[#353839] border border-gray-600 cursor-pointer"></span>
+            </div>
+            <div class="text-center w-full">
+                <h3 class="text-xl font-medium text-gray-900 mb-2">Neo 10</h3>
+                <p class="text-xs text-gray-500 font-medium">Rp5.999.000 (8+256)</p>
+                <p class="text-xs text-gray-500 font-medium mt-0.5">Rp6.499.000 (12+256)</p>
+            </div>
+        </div>
+
+        <div data-category="aksesoris"
+            class="bg-white rounded-3xl p-6 flex flex-col items-center justify-between min-h-130 transition-all duration-300 transform hover:-translate-y-1 shadow-sm">
+            <div class="w-full flex justify-center items-center flex-1 p-4">
+                <img src="img produk/cooler hp.jpg" alt="iQOO Cooler 2" class="max-h-60 object-contain">
+            </div>
+            <div class="flex space-x-2 my-4">
+                <span
+                    class="w-5 h-5 rounded-full bg-[#1c1d1f] border border-gray-700 ring-2 ring-offset-2 ring-yellow-400 cursor-pointer"></span>
+            </div>
+            <div class="text-center w-full">
+                <h3 class="text-xl font-medium text-gray-900 mb-2">iQOO Cooler 2</h3>
+                <p class="text-xs text-gray-500 font-medium">Rp499.000</p>
+            </div>
+        </div>
+
+        <div data-category="aksesoris"
+            class="bg-white rounded-3xl p-6 flex flex-col items-center justify-between min-h-130 transition-all duration-300 transform hover:-translate-y-1 shadow-sm">
+            <div class="w-full flex justify-center items-center flex-1 p-4">
+                <img src="img produk/tws iqoo.jpg" alt="iQOO 1i" class="max-h-55 object-contain">
+            </div>
+            <div class="h-5 my-4"></div>
+            <div class="text-center w-full">
+                <h3 class="text-xl font-medium text-gray-900 mb-2">iQOO 1i</h3>
+                <p class="text-xs text-gray-500 font-medium">Rp349.000</p>
+            </div>
+        </div>
+
+        <div data-category="flagship"
+            class="bg-white rounded-3xl p-6 flex flex-col items-center justify-between min-h-130 transition-all duration-300 transform hover:-translate-y-1 shadow-sm">
+            <div class="w-full flex justify-center items-center flex-1 p-4">
+                <img src="img produk/iqoo 13.png" alt="iQOO 13" class="max-h-70 object-contain">
+            </div>
+            <div class="flex space-x-2 my-4">
+                <span
+                    class="w-5 h-5 rounded-full bg-[#f3f4f6] border border-gray-300 ring-2 ring-offset-2 ring-gray-200 cursor-pointer"></span>
+                <span class="w-5 h-5 rounded-full bg-[#111827] border border-gray-900 cursor-pointer"></span>
+            </div>
+            <div class="text-center w-full">
+                <h3 class="text-xl font-medium text-gray-900 mb-2">iQOO 13</h3>
+                <p class="text-xs text-gray-500 font-medium">Rp9.999.000 (12+256)</p>
+                <p class="text-xs text-gray-500 font-medium mt-0.5">Rp11.999.000 (16+512)</p>
+            </div>
+        </div>
+
+        <div data-category="flagship"
+            class="bg-white rounded-3xl p-6 flex flex-col items-center justify-between min-h-130 transition-all duration-300 transform hover:-translate-y-1 shadow-sm">
+            <div class="w-full flex justify-center items-center flex-1 p-4">
+                <img src="img produk/iqoo 12.png" alt="iQOO 12" class="max-h-70 object-contain">
+            </div>
+            <div class="flex space-x-2 my-4">
+                <span
+                    class="w-5 h-5 rounded-full bg-[#f3f4f6] border border-gray-300 ring-2 ring-offset-2 ring-gray-200 cursor-pointer"></span>
+                <span class="w-5 h-5 rounded-full bg-[#111827] border border-gray-900 cursor-pointer"></span>
+            </div>
+            <div class="text-center w-full">
+                <h3 class="text-xl font-medium text-gray-900 mb-2">iQOO 12</h3>
+                <p class="text-xs text-gray-500 font-medium">Rp10.999.000 (16+512)</p>
+            </div>
+        </div>
+
+        <div data-category="aksesoris"
+            class="bg-white rounded-3xl p-6 flex flex-col items-center justify-between min-h-130 transition-all duration-300 transform hover:-translate-y-1 shadow-sm">
+            <div class="w-full flex justify-center items-center flex-1 p-4">
+                <img src="img produk/air phone.png" alt="TWS 1e" class="max-h-55 object-contain">
+            </div>
+            <div class="h-5 my-4"></div>
+            <div class="text-center w-full">
+                <h3 class="text-xl font-medium text-gray-900 mb-2">TWS 1e</h3>
+                <p class="text-xs text-gray-500 font-medium">Rp499.000</p>
+            </div>
+        </div>
+
+        <div data-category="z"
+            class="bg-white rounded-3xl p-6 flex flex-col items-center justify-between min-h-130 transition-all duration-300 transform hover:-translate-y-1 shadow-sm">
+            <div class="w-full flex justify-center items-center flex-1 p-4">
+                <img src="img produk/iqoo z7 hp.png" alt="Z7 5G" class="max-h-70 object-contain">
+            </div>
+            <div class="flex space-x-2 my-4">
+                <span
+                    class="w-5 h-5 rounded-full bg-[#93c5fd] border border-blue-400 ring-2 ring-offset-2 ring-blue-200 cursor-pointer"></span>
+                <span class="w-5 h-5 rounded-full bg-[#1f2937] border border-gray-700 cursor-pointer"></span>
+                <span class="w-5 h-5 rounded-full bg-[#d97706] border border-amber-600 cursor-pointer"></span>
+            </div>
+            <div class="text-center w-full">
+                <h3 class="text-xl font-medium text-gray-900 mb-2">Z7 5G</h3>
+                <p class="text-xs text-gray-500 font-medium">Rp3.799.000 (8+128)</p>
+                <p class="text-xs text-gray-500 font-medium mt-0.5">Rp4.899.000 (12+256)</p>
+            </div>
+        </div>
+
+        <div data-category="z"
+            class="bg-white rounded-3xl p-6 flex flex-col items-center justify-between min-h-130 transition-all duration-300 transform hover:-translate-y-1 shadow-sm">
+            <div class="w-full flex justify-center items-center flex-1 p-4">
+                <img src="img produk/iqoo z7x.png" alt="Z7x 5G" class="max-h-70 object-contain">
+            </div>
+            <div class="flex space-x-2 my-4">
+                <span
+                    class="w-5 h-5 rounded-full bg-[#93c5fd] border border-blue-400 ring-2 ring-offset-2 ring-blue-200 cursor-pointer"></span>
+                <span class="w-5 h-5 rounded-full bg-[#1f2937] border border-gray-700 cursor-pointer"></span>
+            </div>
+            <div class="text-center w-full">
+                <h3 class="text-xl font-medium text-gray-900 mb-2">Z7x 5G</h3>
+                <p class="text-xs text-gray-500 font-medium">Rp3.299.000 (8+128)</p>
+                <p class="text-xs text-gray-500 font-medium mt-0.5">Rp3.699.000 (8+256)</p>
+            </div>
+        </div>
+
+        <div data-category="aksesoris"
+            class="bg-white rounded-3xl p-6 flex flex-col items-center justify-between min-h-130 transition-all duration-300 transform hover:-translate-y-1 shadow-sm">
+            <div class="w-full flex justify-center items-center flex-1 p-4">
+                <img src="img produk/coller hp.png" alt="Cooling Back Clip Neo" class="max-h-55 object-contain">
+            </div>
+            <div class="h-5 my-4"></div>
+            <div class="text-center w-full">
+                <h3 class="text-xl font-medium text-gray-900 mb-2">Cooling Back Clip Neo</h3>
+                <p class="text-xs text-gray-500 font-medium">Rp299.000</p>
+            </div>
+        </div>
+
+        <div data-category="aksesoris"
+            class="bg-white rounded-3xl p-6 flex flex-col items-center justify-between min-h-130 transition-all duration-300 transform hover:-translate-y-1 shadow-sm">
+            <div class="w-full flex justify-center items-center flex-1 p-4">
+                <img src="img produk/sarung jempol.png" alt="Game Finger Sleeve" class="max-h-55 object-contain">
+            </div>
+            <div class="h-5 my-4"></div>
+            <div class="text-center w-full">
+                <h3 class="text-xl font-medium text-gray-900 mb-2">Game Finger Sleeve</h3>
+                <p class="text-xs text-gray-500 font-medium">Rp59.000</p>
+            </div>
+        </div>
+
+        <div data-category="flagship"
+            class="bg-white rounded-3xl p-6 flex flex-col items-center justify-between min-h-130 transition-all duration-300 transform hover:-translate-y-1 shadow-sm">
+            <div class="w-full flex justify-center items-center flex-1 p-4">
+                <img src="img produk/iqoo z11.png" alt="iQOO 11" class="max-h-70 object-contain">
+            </div>
+            <div class="flex space-x-2 my-4">
+                <span
+                    class="w-5 h-5 rounded-full bg-[#d1d5db] border border-gray-400 ring-2 ring-offset-2 ring-gray-300 cursor-pointer"></span>
+                <span class="w-5 h-5 rounded-full bg-[#111827] border border-gray-900 cursor-pointer"></span>
+            </div>
+            <div class="text-center w-full">
+                <h3 class="text-xl font-medium text-gray-900 mb-2">iQOO 11</h3>
+                <p class="text-xs text-gray-500 font-medium">Rp8.999.000 (16+256)</p>
+            </div>
+        </div>
+
+        <div data-category="aksesoris"
+            class="bg-white rounded-3xl p-6 flex flex-col items-center justify-between min-h-130 transition-all duration-300 transform hover:-translate-y-1 shadow-sm">
+            <div class="w-full flex justify-center items-center flex-1 p-4">
+                <img src="img produk/head sead.png" alt="Wireless Active" class="max-h-55 object-contain">
+            </div>
+            <div class="h-5 my-4"></div>
+            <div class="text-center w-full">
+                <h3 class="text-xl font-medium text-gray-900 mb-2">Wireless Active</h3>
+                <p class="text-xs text-gray-500 font-medium">Rp299.000</p>
+            </div>
+        </div>
+
+        <div data-category="aksesoris"
+            class="bg-white rounded-3xl p-6 flex flex-col items-center justify-between min-h-130 transition-all duration-300 transform hover:-translate-y-1 shadow-sm">
+            <div class="w-full flex justify-center items-center flex-1 p-4">
+                <img src="img produk/cooling new.png" alt="Cooling Back Clip Pro" class="max-h-55 object-contain">
+            </div>
+            <div class="h-5 my-4"></div>
+            <div class="text-center w-full">
+                <h3 class="text-xl font-medium text-gray-900 mb-2">Cooling Back Clip Pro</h3>
+                <p class="text-xs text-gray-500 font-medium">Rp599.000</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="bg-slate-800 pt-16 pb-8 text-white">
+        <div class="max-w-300 mx-auto px-8">
+            <div class="grid grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white text-base font-semibold mb-4">Popular Links</h3>
+                    <ul class="space-y-2.5 text-sm">
+                        <li class="text-white hover:text-amber-300">iQOO 15</li>
+                        <li class="text-white hover:text-amber-300">iQOO Z10 Lite</li>
+                        <li class="text-white hover:text-amber-300">iQOO Z10R</li>
+                        <li class="text-white hover:text-amber-300">iQOO Neo 10</li>
+                        <li class="text-white hover:text-amber-300">iQOO Z10 5G</li>
+                        <li class="text-white hover:text-amber-300">iQOO 13</li>
+                        <li class="text-white hover:text-amber-300">iQOO Z9</li>
+                        <li class="text-white hover:text-amber-300">iQOO Z9x</li>
+                        <li class="text-white hover:text-amber-300 cursor-pointer">Lihat Semua</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white text-base font-semibold mb-4">Dukungan</h3>
+                    <ul class="space-y-2.5 text-sm">
+                        <li class="text-white hover:text-amber-300">FAQs</li>
+                        <li class="text-white hover:text-amber-300">Service Center</li>
+                        <li class="text-white hover:text-amber-300">Otentikasi IMEI</li>
+                        <li class="text-white hover:text-amber-300">Harga Suku Cadang</li>
+                        <li class="text-white hover:text-amber-300">Cek status perbaikan</li>
+                        <li class="text-white hover:text-amber-300">Kebijakan Garansi iQOO</li>
+                        <li class="text-white hover:text-amber-300">Layanan Perbaikan Antar Jemput</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white text-base font-semibold mb-4">Tentang iQOO</h3>
+                    <ul class="text-sm space-y-2.5">
+                        <li class="text-white hover:text-amber-300">Info</li>
+                        <li class="text-white hover:text-amber-300">Tentang Kami</li>
+                        <li class="text-white hover:text-amber-300">Pemberitahuan Hukum</li>
+                        <li class="text-white hover:text-amber-300">News</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-6 text-sm">
+                    <div class="flex items-start gap-3 text-white hover:text-amber-300">
+                        <img src="img home/image.png" alt="chat" class="w-8 h-8 mt-1">
+                        <div>
+                            <p>WhatsApp Senin - Minggu</p>
+                            <p>09:00 - 21:00</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <img src="img home/telepon awal.png" alt="telepon 1" class="w-8 h-8 mt-1">
+                        <div>
+                            <p>VIP Hotline: Senin - Minggu</p>
+                            <p>9:00-18:00 (Bebas Pulsa)</p>
+                            <p class="text-white text-2xl font-bold mt-1">00180332160635</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <img src="img home/telepon bawah awal.png" alt="telepon 2" class="w-8 h-8 mt-1">
+                        <div>
+                            <p>Senin - Minggu 9:00-18:00</p>
+                            <p>(Bebas Pulsa)</p>
+                            <p class="text-white text-2xl font-bold mt-1">0800-1-503258</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3 text-white hover:text-amber-300">
+                        <img src="img home/email awal.png" alt="email" class="w-8 h-8 mt-1">
+                        <p>Kirim Email</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-[#3b4356] mt-12 pt-6">
+                <div class="flex justify-between items-center text-xs text-gray-400">
+                    <div class="flex flex-wrap gap-2">
+                        <span>© 2026 vivo Mobile Communication Co., Ltd. Semua hak dilindungi undang-undang.</span>
+                        <span>|</span>
+                        <a href="#" class="hover:underline">Kebijakan Privasi</a>
+                        <span>|</span>
+                        <a href="#" class="hover:underline">Kebijakan Kuki</a>
+                        <span>|</span>
+                        <a href="#" class="hover:underline">Dukungan Privasi</a>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span>Indonesia</span>
+                        <span>|</span>
+                        <a href="#" class="hover:underline">Pilih negara/wilayah</a>
+                        <span class="text-sm">🌐</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function gantiTab(kategori) {
+            // 1. Reset warna semua tombol tab
+            const semuaTombol = document.querySelectorAll('.tab-btn');
+            semuaTombol.forEach(tombol => {
+                tombol.classList.remove('bg-[#f1b319]', 'text-white', 'font-semibold');
+                tombol.classList.add('text-gray-600', 'font-medium');
+            });
+
+            // 2. Aktifkan warna kuning pada tombol yang diklik
+            const tombolAktif = document.getElementById(`tab-${kategori}`);
+            if (tombolAktif) {
+                tombolAktif.classList.remove('text-gray-600', 'font-medium');
+                tombolAktif.classList.add('bg-[#f1b319]', 'text-white', 'font-semibold');
+            }
+
+            // 3. Saring Card Produk berdasarkan Kategori
+            const semuaCard = document.querySelectorAll('#product-container > div');
+            semuaCard.forEach(card => {
+                if (kategori === 'semua') {
+                    card.classList.remove('hidden');
+                } else {
+                    const kategoriCard = card.getAttribute('data-category');
+                    if (kategoriCard === kategori) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                }
+            });
+            console.log("Kategori aktif saat ini:", kategori);
+        }
+    </script>
+
+</body>
+
+</html>

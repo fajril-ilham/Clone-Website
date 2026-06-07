@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paritel - iQOO</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body class="bg-[#fcf8f8] font-sans antialiased text-slate-900 min-h-screen">
+    <nav id="navbar"
+        class="fixed top-0 left-0 w-full z-50 bg-[#f8f9fa] py-6 px-6 md:px-20 transition-all duration-300 ease-in-out">
+        <div class="w-full flex justify-between items-center">
+            <div id="nav-logo" class="flex items-center shrink-0">
+                <img src="img home/logo iqoo nyar.png" alt="iQOO Logo"
+                    class="h-7 md:h-8 w-auto object-contain select-none">
+            </div>
+
+            <div class="hidden md:flex items-center space-x-10 text-[15px] font-medium text-gray-900 tracking-wide"
+                id="nav-links">
+                <a href="index.html" class="hover:text-amber-500 transition-colors">Beranda</a>
+                <a href="produk.html" class="hover:text-amber-500 transition-colors">Produk</a>
+                <a href="https://shop.vivo.com/id/products/phone?categoryId=40"
+                    class="hover:text-amber-500 transition-colors">E-Store</a>
+                <a href="https://www.iqoo.com/id/originos" class="hover:text-amber-500 transition-colors">OriginOS</a>
+                <a href="dukungan.html" class="hover:text-amber-500 transition-colors">Dukungan</a>
+                <a href="Paritel.html" class="hover:text-amber-500 transition-colors">Paritel</a>
+                <a href="Tentang iqoo.html" class="hover:text-amber-500 transition-colors">Tentang iQOO</a>
+            </div>
+
+            <div class="flex items-center shrink-0">
+                <a href="#" class="hover:opacity-70 transition-opacity block">
+                    <img src="img home/tombol pencarian atas.png" alt="search" class="h-6 w-6 object-contain">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main class="w-full grow">
+        <section class="relative w-full overflow-hidden flex flex-col justify-center items-center text-center">
+
+            <img src="img paritel/baground paritel2.jpg" alt="iQOO Peritel Banner"
+                class="w-full h-auto object-cover min-h-90">
+
+            <div class="absolute inset-0 flex flex-col justify-center items-center px-4 pb-20 md:pb-32">
+
+                <div class="max-w-2xl mb-4 md:mb-6">
+                    <h1 class="text-3xl md:text-5xl font-medium text- tracking-wide mb-1 md:mb-2">
+                        Peritel
+                    </h1>
+                    <p class="text-xs md:text-base text-slate-700 font-normal">
+                        Temukan toko di sekitar Anda.
+                    </p>
+                </div>
+
+                <div class="relative w-full max-w-xl px-6 z-30">
+
+                    <div id="btn-lokasi"
+                        class="w-full bg-white rounded-full shadow-md px-6 py-3 md:py-3.5 flex justify-between items-center border border-gray-100 cursor-pointer active:scale-[0.99] transition-transform duration-150">
+                        <div class="flex items-center gap-3">
+                            <img src="img paritel/lokasi.svg" alt="Lokasi" class="w-4 h-4 md:w-5 md:h-5 object-contain">
+                            <span id="text-lokasi-selected" class="text-gray-500 text-sm md:text-base font-medium">Pilih
+                                lokasi</span>
+                        </div>
+                        <img src="img paritel/panah bawah .png" alt="Arrow" id="arrow-icon"
+                            class="w-3 h-3 md:w-4 md:h-4 object-contain transition-transform duration-300">
+                    </div>
+
+                    <div id="dropdown-lokasi"
+                        class="hidden absolute top-full left-6 right-6 mt-2 bg-white rounded-2xl shadow-2xl border border-gray-100 p-6 max-h-80 overflow-y-auto transition-all duration-300">
+
+                        <div class="flex bg-gray-100 p-1 rounded-xl mb-5">
+                            <button id="tab-provinsi"
+                                class="w-1/2 bg-[#ea9d19] text-white py-2 rounded-lg text-sm font-medium transition duration-200">
+                                Provinsi
+                            </button>
+                            <button id="tab-kota"
+                                class="w-1/2 text-gray-500 py-2 rounded-lg text-sm font-medium hover:text-gray-800 transition duration-200">
+                                Kota
+                            </button>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-y-3 gap-x-2 text-center text-xs md:text-sm text-gray-700">
+                            <button
+                                class="prov-item py-2 px-1 rounded-full bg-[#ea9d19] text-white font-medium whitespace-nowrap overflow-hidden text-ellipsis shadow-sm transition-all duration-200">BANDAR
+                                LAMPUNG</button>
+                            <button
+                                class="prov-item py-2 px-1 rounded-full hover:bg-amber-50 hover:text-[#ea9d19] font-medium whitespace-nowrap overflow-hidden text-ellipsis transition-all duration-200">BANTEN</button>
+                            <button
+                                class="prov-item py-2 px-1 rounded-full hover:bg-amber-50 hover:text-[#ea9d19] font-medium whitespace-nowrap overflow-hidden text-ellipsis transition-all duration-200">DI
+                                YOGYAKARTA</button>
+                            <button
+                                class="prov-item py-2 px-1 rounded-full hover:bg-amber-50 hover:text-[#ea9d19] font-medium whitespace-nowrap overflow-hidden text-ellipsis transition-all duration-200">DKI
+                                JAKARTA</button>
+                            <button
+                                class="prov-item py-2 px-1 rounded-full hover:bg-amber-50 hover:text-[#ea9d19] font-medium whitespace-nowrap overflow-hidden text-ellipsis transition-all duration-200">JAWA
+                                BARAT</button>
+                            <button
+                                class="prov-item py-2 px-1 rounded-full hover:bg-amber-50 hover:text-[#ea9d19] font-medium whitespace-nowrap overflow-hidden text-ellipsis transition-all duration-200">JAWA
+                                TENGAH</button>
+                            <button
+                                class="prov-item py-2 px-1 rounded-full hover:bg-amber-50 hover:text-[#ea9d19] font-medium whitespace-nowrap overflow-hidden text-ellipsis transition-all duration-200">JAWA
+                                TIMUR</button>
+                            <button
+                                class="prov-item py-2 px-1 rounded-full hover:bg-amber-50 hover:text-[#ea9d19] font-medium whitespace-nowrap overflow-hidden text-ellipsis transition-all duration-200">KALIMANTAN
+                                SELATAN</button>
+                            <button
+                                class="prov-item py-2 px-1 rounded-full hover:bg-amber-50 hover:text-[#ea9d19] font-medium whitespace-nowrap overflow-hidden text-ellipsis transition-all duration-200">KENDARI</button>
+                            <button
+                                class="prov-item py-2 px-1 rounded-full hover:bg-amber-50 hover:text-[#ea9d19] font-medium whitespace-nowrap overflow-hidden text-ellipsis transition-all duration-200">KEPULAUAN
+                                BANGKA BELITUNG</button>
+                            <button
+                                class="prov-item py-2 px-1 rounded-full hover:bg-amber-50 hover:text-[#ea9d19] font-medium whitespace-nowrap overflow-hidden text-ellipsis transition-all duration-200">KEPULAUAN
+                                RIAU</button>
+                            <button
+                                class="prov-item py-2 px-1 rounded-full hover:bg-amber-50 hover:text-[#ea9d19] font-medium whitespace-nowrap overflow-hidden text-ellipsis transition-all duration-200">LAMPUNG</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full max-w-[1360px] mx-auto px-4 md:px-8 relative z-20 -mt-16 md:-mt-28 pb-16">
+            <div class="w-full bg-white rounded-[2rem] shadow-xl overflow-hidden p-1 border border-white">
+
+                <div
+                    class="relative w-full aspect-[4/3] md:aspect-[16/10] min-h-[500px] bg-sky-100 rounded-[1.8rem] overflow-hidden">
+                    <iframe class="w-full h-full border-0 rounded-[1.8rem]"
+                        src="https://maps.google.com/maps?q=Indonesia&t=&z=5&ie=UTF8&iwloc=&output=embed"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="bg-slate-800 pt-16 pb-8 text-white">
+        <div class="max-w-300 mx-auto px-8">
+
+            <div class="grid grid-cols-4 gap-8">
+
+                <div>
+                    <h3 class="text-white text-base font-semibold mb-4">Popular Links</h3>
+                    <ul class="space-y-2.5 text-sm">
+                        <li class="text-white hover:text-amber-300">iQOO 15</li>
+                        <li class="text-white hover:text-amber-300">iQOO Z10 Lite</li>
+                        <li class="text-white hover:text-amber-300">iQOO Z10R</li>
+                        <li class="text-white hover:text-amber-300">iQOO Neo 10</li>
+                        <li class="text-white hover:text-amber-300">iQOO Z10 5G</li>
+                        <li class="text-white hover:text-amber-300">iQOO 13</li>
+                        <li class="text-white hover:text-amber-300">iQOO Z9</li>
+                        <li class="text-white hover:text-amber-300">iQOO Z9x</li>
+                        <li class="text-white hover:text-amber-300 cursor-pointer">Lihat Semua</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white text-base font-semibold mb-4">Dukungan</h3>
+                    <ul class="space-y-2.5 text-sm">
+                        <li class="text-white hover:text-amber-300">FAQs</li>
+                        <li class="text-white hover:text-amber-300">Service Center</li>
+                        <li class="text-white hover:text-amber-300">Otentikasi IMEI</li>
+                        <li class="text-white hover:text-amber-300">Harga Suku Cadang</li>
+                        <li class="text-white hover:text-amber-300">Cek status perbaikan</li>
+                        <li class="text-white hover:text-amber-300">Kebijakan Garansi iQOO</li>
+                        <li class="text-white hover:text-amber-300">Layanan Perbaikan Antar Jemput</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white text-base font-semibold mb-4">Tentang iQOO</h3>
+                    <ul class="text-sm">
+                        <li class="text-white hover:text-amber-300">Info</li>
+                        <li class="text-white hover:text-amber-300">Tentang Kami</li>
+                        <li class="text-white hover:text-amber-300">Pemberitahuan Hukum</li>
+                        <li class="text-white hover:text-amber-300">News</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-6 text-sm">
+                    <div class="flex items-start gap-3 text-white hover:text-amber-300">
+                        <img src="img home/image.png" alt="chat" class="w-8 h-8 mt-1">
+                        <div>
+                            <p>WhatsApp Senin - Minggu</p>
+                            <p>09:00 - 21:00</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <img src="img home/telepon awal.png" alt="telepon 1" class="w-8 h-8 mt-1">
+                        <div>
+                            <p>VIP Hotline: Senin - Minggu</p>
+                            <p>9:00-18:00 (Bebas Pulsa)</p>
+                            <p class="text-white text-2xl font-bold mt-1">00180332160635</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <img src="img home/telepon bawah awal.png" alt="telepon 2" class="w-8 h-8 mt-1">
+                        <div>
+                            <p>Senin - Minggu 9:00-18:00</p>
+                            <p>(Bebas Pulsa)</p>
+                            <p class="text-white text-2xl font-bold mt-1">0800-1-503258</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3 text-white hover:text-amber-300">
+                        <img src="img home/email awal.png" alt="email" class="w-8 h-8 mt-1">
+                        <p>Kirim Email</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border-t border-[#3b4356] mt-12 pt-6">
+
+                <div class="flex justify-between items-center text-xs text-gray-400">
+
+                    <div class="flex flex-wrap gap-2">
+                        <span>© 2026 vivo Mobile Communication Co., Ltd. Semua hak dilindungi undang-undang.</span>
+                        <span>|</span>
+                        <a href="#" class="hover:underline">Kebijakan Privasi</a>
+                        <span>|</span>
+                        <a href="#" class="hover:underline">Kebijakan Kuki</a>
+                        <span>|</span>
+                        <a href="#" class="hover:underline">Dukungan Privasi</a>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <span>Indonesia</span>
+                        <span>|</span>
+                        <a href="#" class="hover:underline">Pilih negara/wilayah</a>
+                        <span class="text-sm">🌐</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.onscroll = function () {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-white', 'shadow-md', 'py-2');
+                navbar.classList.remove('bg-transparent', 'py-4');
+            } else {
+                navbar.classList.add('bg-transparent', 'py-4');
+                navbar.classList.remove('bg-white', 'shadow-md', 'py-2');
+            }
+        };
+    </script>
+
+    <script>
+        const btnLokasi = document.getElementById('btn-lokasi');
+        const dropdownLokasi = document.getElementById('dropdown-lokasi');
+        const arrowIcon = document.getElementById('arrow-icon');
+        const textLokasiSelected = document.getElementById('text-lokasi-selected');
+        const provItems = document.querySelectorAll('.prov-item');
+
+        // Toggle dropdown area
+        btnLokasi.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isHidden = dropdownLokasi.classList.contains('hidden');
+
+            if (isHidden) {
+                dropdownLokasi.classList.remove('hidden');
+                arrowIcon.classList.add('rotate-180');
+            } else {
+                dropdownLokasi.classList.add('hidden');
+                arrowIcon.classList.remove('rotate-180');
+            }
+        });
+
+        // Interaksi klik item provinsi
+        provItems.forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.stopPropagation();
+
+                provItems.forEach(btn => {
+                    btn.classList.remove('bg-[#ea9d19]', 'text-white', 'shadow-sm');
+                    btn.classList.add('hover:bg-amber-50', 'hover:text-[#ea9d19]');
+                });
+
+                item.classList.add('bg-[#ea9d19]', 'text-white', 'shadow-sm');
+                item.classList.remove('hover:bg-amber-50', 'hover:text-[#ea9d19]');
+
+                textLokasiSelected.innerText = item.innerText;
+                textLokasiSelected.classList.remove('text-gray-500');
+                textLokasiSelected.classList.add('text-slate-900', 'font-semibold');
+
+                dropdownLokasi.classList.add('hidden');
+                arrowIcon.classList.remove('rotate-180');
+            });
+        });
+
+        // Klik di luar untuk menutup dropdown
+        document.addEventListener('click', () => {
+            dropdownLokasi.classList.add('hidden');
+            arrowIcon.classList.remove('rotate-180');
+        });
+    </script>
+</body>
+
+</html>
